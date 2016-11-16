@@ -7,11 +7,10 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.MenuItem;
-import android.widget.TextView;
 
 import com.android.fik.bottomnavigation.R;
-import com.android.fik.bottomnavigation.fragment.FourFragment;
 import com.android.fik.bottomnavigation.fragment.FiveFragment;
+import com.android.fik.bottomnavigation.fragment.FourFragment;
 import com.android.fik.bottomnavigation.fragment.OneFragment;
 import com.android.fik.bottomnavigation.fragment.ThreeFragment;
 import com.android.fik.bottomnavigation.fragment.TwoFragment;
@@ -24,7 +23,6 @@ import com.android.fik.bottomnavigation.fragment.TwoFragment;
 public class MainActivity  extends AppCompatActivity {
 
     private Toolbar mToolbar;
-    private TextView mText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +30,6 @@ public class MainActivity  extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
-        mText = (TextView) findViewById(R.id.text);
         setSupportActionBar(mToolbar);
 
         FragmentTransaction tx = getSupportFragmentManager().beginTransaction();
@@ -60,6 +57,7 @@ public class MainActivity  extends AppCompatActivity {
                                 transaction2.replace(R.id.frame_container, fragment2);
                                 transaction2.commit();
                                 break;
+
                             case R.id.action_three:
                                 ThreeFragment fragment3 = new ThreeFragment();
                                 FragmentTransaction transaction3 = getSupportFragmentManager().beginTransaction();
