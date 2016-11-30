@@ -47,6 +47,7 @@ public class MainActivity  extends AppCompatActivity {
                             case R.id.action_one:
                                 OneFragment fragment1 = new OneFragment();
                                 FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+                                transaction.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
                                 transaction.replace(R.id.frame_container, fragment1);
                                 transaction.commit();
                                 break;
@@ -54,6 +55,7 @@ public class MainActivity  extends AppCompatActivity {
                             case R.id.action_two:
                                 TwoFragment fragment2 = new TwoFragment();
                                 FragmentTransaction transaction2 = getSupportFragmentManager().beginTransaction();
+                                transaction2.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
                                 transaction2.replace(R.id.frame_container, fragment2);
                                 transaction2.commit();
                                 break;
@@ -61,6 +63,7 @@ public class MainActivity  extends AppCompatActivity {
                             case R.id.action_three:
                                 ThreeFragment fragment3 = new ThreeFragment();
                                 FragmentTransaction transaction3 = getSupportFragmentManager().beginTransaction();
+                                transaction3.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
                                 transaction3.replace(R.id.frame_container, fragment3);
                                 transaction3.commit();
                                 break;
@@ -68,6 +71,7 @@ public class MainActivity  extends AppCompatActivity {
                             case R.id.action_four:
                                 FourFragment fragment4 = new FourFragment();
                                 FragmentTransaction transaction4 = getSupportFragmentManager().beginTransaction();
+                                transaction4.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
                                 transaction4.replace(R.id.frame_container, fragment4);
                                 transaction4.commit();
                                 break;
@@ -75,6 +79,7 @@ public class MainActivity  extends AppCompatActivity {
                             case R.id.action_five:
                                 FiveFragment fragment5 = new FiveFragment();
                                 FragmentTransaction transaction5 = getSupportFragmentManager().beginTransaction();
+                                transaction5.setCustomAnimations(android.R.anim.fade_in, android.R.anim.fade_out);
                                 transaction5.replace(R.id.frame_container, fragment5);
                                 transaction5.commit();
                                 break;
